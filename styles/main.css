@@ -1,0 +1,88 @@
+:root {
+    --bg-color: #222;
+    --text-color: #fff;
+    --post-bg-color: #333;
+    --date-color: #aaa;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.description {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 50px;
+}
+
+.post {
+    background-color: var(--post-bg-color);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.date {
+    font-size: 0.8em;
+    color: var(--date-color);
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+body.light-theme {
+    --bg-color: #fff;
+    --text-color: #000;
+    --post-bg-color: #eee;
+    --date-color: #666;
+}
+
+.post-link {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.post-link:hover {
+    text-decoration: underline;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.back-button a,
+#theme-toggle {
+    color: var(--text-color);
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+}
+
+.back-button a:hover,
+#theme-toggle:hover {
+    text-decoration: underline;
+}
