@@ -86,3 +86,22 @@ body.light-theme {
 #theme-toggle:hover {
     text-decoration: underline;
 }
+
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    width: 100%;
+}
+
+.footer-links a {
+    color: var(--text-color);
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
