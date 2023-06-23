@@ -1,2 +1,2 @@
-dist/blog
+dist/blog/*
 .DS_Store
