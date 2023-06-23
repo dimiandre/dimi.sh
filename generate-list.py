@@ -1,7 +1,29 @@
+from html.parser import HTMLParser
 import os
 import datetime
 import re
 
+# Create a subclass of HTMLParser and define a handle_starttag method
+# that gets the content of the first <p> tag
+class MyHTMLParser(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.recording = 0
+        self.data = ''
+
+    def handle_starttag(self, tag, attrs):
+        if tag == 'p':
+            self.recording = 1
+
+    def handle_endtag(self, tag):
+        if tag == 'p' and self.recording:
+            self.recording -= 1
+
+    def handle_data(self, data):
+        if self.recording:
+            self.data = data
+            self.recording -= 1
+            
 def get_date_from_filename(filename):
     # Remove the file extension and split the components
     parts = filename.replace(".html", "").split("-")
@@ -22,6 +44,13 @@ def get_title_from_filename(filename):
 
     return title.capitalize()
 
+def get_first_paragraph_from_file(filepath):
+    with open(filepath, 'r') as file:
+        content = file.read()
+    parser = MyHTMLParser()
+    parser.feed(content)
+    return parser.data
+
 def generate_blog_list():
     # List all files in the blog directory
     files = os.listdir("dist/blog")
@@ -37,12 +66,13 @@ def generate_blog_list():
     for filename in files:
         date = get_date_from_filename(filename)
         title = get_title_from_filename(filename)
+        first_paragraph = get_first_paragraph_from_file(f"dist/blog/{filename}")
 
         blog_list_html += f"""
         <div class="post">
             <span class="date">{date.strftime('%B %d, %Y')}</span>
             <h2><a href="/blog/{filename}" class="post-link">{title}</a></h2>
-            <p>Short description of the blog post.</p>
+            <p>{first_paragraph}</p>
         </div>
         """
 
@@ -54,7 +84,6 @@ if __name__ == "__main__":
     with open("dist/index.html", "r") as file:
         content = file.read()
 
-    # Use regular expressions (regex) to replace content between placeholders
     content = re.sub('<!--BLOG_LIST_START-->.*<!--BLOG_LIST_END-->', f'<!--BLOG_LIST_START-->{blog_list_html}<!--BLOG_LIST_END-->', content, flags=re.DOTALL)
 
     with open("dist/index.html", "w") as file:
