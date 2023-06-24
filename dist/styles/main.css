@@ -13,7 +13,7 @@ body {
 
 .container {
     width: 80%;
-    max-width: 800px;
+    max-width: 950px;
     margin: 0 auto;
     padding: 20px;
 }
@@ -104,4 +104,15 @@ footer {
 
 .footer-links a:hover {
     text-decoration: underline;
+}
+
+/* Default link color */
+a {
+    color: #007BFF; /* This color works well on light backgrounds */
+    transition: color 0.3s;
+}
+
+/* Change link color for dark mode */
+body.dark-mode a {
+    color: #61adff; /* This color works well on dark backgrounds */
 }
