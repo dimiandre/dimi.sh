@@ -2,6 +2,7 @@ import os
 import markdown
 from pathlib import Path
 from datetime import datetime
+from string import Template
 
 src_dir = Path('blog')
 dest_dir = Path('dist/blog')
@@ -9,6 +10,8 @@ dest_dir = Path('dist/blog')
 # Read HTML template
 with open('templates/blog_post.html', 'r', encoding='utf-8') as f:
     html_template = f.read()
+
+html_template = Template(html_template)
 
 # Ensure destination directory exists
 os.makedirs(dest_dir, exist_ok=True)
@@ -28,7 +31,7 @@ for src_file in src_dir.glob('*.md'):
     date = datetime.strptime(date_str, "%Y-%m-%d").strftime('%B %d, %Y')
 
     # Generate the HTML file using the template
-    html_text = html_template.format(
+    html_text = html_template.substitute(
         title=title,
         date=date,
         content=html_content

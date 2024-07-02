@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One year later - Dimi Blog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/main.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EFTSQRYD3X"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-EFTSQRYD3X');
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="top-bar">
+            <div class="back-button">
+                <a href="/">&larr; Back to home</a>
+            </div>
+            <button id="theme-toggle">☀/☾</button>
+        </div>
+
+        <h1>🦙 dimi's notes</h1>
+        <p class="description">Here you will find some thoughts and notes about the projects I'm working on.</p>
+        
+        <div class="post">
+            <span class="date">July 01, 2024</span>
+            <h1>One Year Later on Juno</h1>
+<p>Hello! I'm Dimi 🦙. For those who don't know me, I helped found Juno, contributing to its launch phase with my protocols and engineering abilities. This note is a sequel to <a href="https://google.com">my previous one</a>, released now more than one year ago.</p>
+<h2>What happened</h2>
+<p>After my article Juno went to a massive re-organization, a group of volunteer from the community proposed <a href="https://www.mintscan.io/juno/proposals/319">The Charter</a> and it went live shortly after.</p>
+<p>To summarize, The Charter is a combination of various sub-daos of the Juno Network that has the objective to enhance transparency and manage the chain in all of its aspects, including: operations, comunications and development.</p>
+<p>It took some months to have it up and running, with public elections, lots of people involved and many discussions within the community. It went fully operative only in ~January 2024.</p>
+<p>In the past 6 months of the charter, Juno reached a level of decentralizations and transparency like never before, accomplished the clearance of previous agreements and worked to define a budget to spend for the chain growth.</p>
+<p>But, all this decenetralization and transparacency quickly highlighted the inefficiencies of the charter itself. It was taking weeks even to make the simpliest decision, with a super long burocratic and tiring process for everyone.</p>
+<p>Because of this slowness, the Charter wasn't able to deliver enough to the juno community, basically focusing only on organizing the charter itself rather than driving the network to a new direction.</p>
+<p>The charter now is going to be disbanded, with <a href="https://www.mintscan.io/juno/proposals/350">this proposal</a>. With my personal stake, and my validator company too, I voted NO to it because I though the best path forward would have been to fix the charter inefficiencies and keep working with the great people that have contributed so much to it. Unfortunately the prop passed, so now we need to think about something new.</p>
+<h2>Today</h2>
+<p>Most of the Charter department members took proposal 350 literally, and immediately removed themselves from the various DAOs, effectively locking treasury and tokens in smart contracts that are now impossible to access without a software upgrade or admin onchain proposals. Additionaly, the proposal was bad worded and I can't see a way to continue the delegation program without putting at risk the 10M JUNO tokens in the hands of few people.</p>
+<p>As of today, no one is effectively managing the chain. There is no roadmap. There is no objective. It's chaos.</p>
+<p>This may sound tragic, but it can also be a huge opportuninty to restart and try again with something new, learning from the mistakes made down the road.</p>
+<p>And no worries - I'll keep working on Juno Core as I always did since genesis. Yes I was here when reece was here, I was here when the frey was here, I was here when notional was here, and so on. So we are covered at least with basic upgrades and security patches.</p>
+<h2>Next</h2>
+<p>This is the most fun part, because we can do something to quickly make thing up and running again, this time hopefully with a solid solution that can last a long time.</p>
+<p>I think the next steps should be</p>
+<ol>
+<li>Define a new more efficient organizational structure</li>
+<li>Revisit tokenomics, locked balances, vestings, inflation, governance</li>
+<li>Cleanup Juno Core code and write the necessary upgrades</li>
+<li>Build dAPPs internally</li>
+</ol>
+<p>Let's takle each of this one by one.</p>
+<h3>New structure</h3>
+<p>What was really missing in the charter was someone giving direction to it, someone taking responsibility of decision. The whole charter idea was based on the fact that departments whould have done check and balances to the other, but in the real word that doesn't happen. Human collaboration requires leadrship to not get stuck.</p>
+<p>A structure that may be efficient is the following</p>
+<p><img alt="Juno Structure" src="https://gateway.pinata.cloud/ipfs/Qmec2BjA1qScNoXnSxhCrEzAJnCuHn9mh6SkZtPyhcBjUS" /></p>
+<ol>
+<li><em>Juno Leader</em>: This should be elected by the community. Anyone should be able to apply as a leader, and every mandate should be 6-12 months long. To apply a leader has to provide the following: Previous experience with juno, conflict of interest disclosure, a budget for its entire mandate, a well defined roadmap with tangible objectives and deadlines.</li>
+<li><em>Treasury Custodians</em>: This is just a multisig to handle payments. Its members should not be part of the operatives or the leader. The custodians have the responsibility of keeping funds safe and ensuring the leader is following the scheduled budget.</li>
+<li><em>Dev, BD and Comms Operatives</em>: Rather than having distinct subdaos each of those working by their own, we can simplify things and have people working together directly to get stuff done quickly. These people can apply directly to the leader or on the forum. The leader should include their salary in the budget request.</li>
+</ol>
+<p>This structure would account for a total of 6 operative people and 5-7 custodians with signing duties only, reducing costs for the network and streamlining efficiency.</p>
+<h4>Ensuring transparency and accountability</h4>
+<p>One of the biggest accomplishments of the Charter was the great transparency and accountability, we certantly don't want to loose it. That's why I strongly reccomend to keep some of the previous policies, but also giving up on some business killing ones</p>
+<ul>
+<li>All discussions and meetings should happen in public on discord whenever possible</li>
+<li>If there is an internal private meeting, it should be communicated over the appropriate channels</li>
+<li>Allow private speaking with other projects and potential businesses.</li>
+<li>All the decisions should be taken trough daodao proposals</li>
+<li>The leader should report back to the community at least every 2 weeks about progress and goals</li>
+</ul>
+<h4>How to practically create this</h4>
+<ol>
+<li>Post a governance proposal to juno gov defining the terms of leader elections</li>
+<li>Proceed with leader election</li>
+<li>Find volunteers to join as treasury custodians</li>
+<li>Rename the council to "treasury custodians" and add the people trough a gov vote</li>
+<li>Find people willing to work for the operatives role. In an ideal world, the leader already has a team or a set of trusted people to work with that can be scrutined by the community.</li>
+<li>Create a new dao with all the operatives and leader inside</li>
+</ol>
+<h3>Tokenomics</h3>
+<p>I wrote this also in my previous post, and I'll writ it again here. Juno tokenomics is not very sustainable, it works well only during peak markets where there is lots of demand for the token for pure speculation. We need to change it.</p>
+<p>I see two possible roads - not sure which would fit best</p>
+<p><em>Option A: PSS LFG</em></p>
+<p>1- Drop the validator set and adopt PSS from the Hub
+2- Remove inflation
+3- Allocate a percentage of the community pool as "goverance rewards"
+4- Allow people to vote in governance directly or via governors.</p>
+<p><em>Option B: NO PSS</em></p>
+<p>1- Keep the current validator set
+2- Reduce inflation - or remove it but allocate a fixed amount from community pool to it
+3- Fuck off the 12 years bullshit
+3- Not distribute staking rewards proportionally but rather based on validator position in the set. The less vp a validator has the more staking rewards should get.
+4- Use quadratic votings for votes proxed by validators</p>
+<p>In both this options we should probably fork out core-1 vestings and prop 16 funds.</p>
+<h3>Juno Core</h3>
+<p>It's currently in a shitty looking face, in the past 6 months it only got security upgrades and minor version bumps. We should get back in track with it: bump to sdk 50, collaborate with skip for slinky and the other cool implementations. While it's important to focus on dapps, also the core should not be just left over or you will became obsolete very quickly</p>
+<h3>Internal dAPPs</h3>
+<p>No one will save Juno. No one will ever build anything because juno is cool. Devs build on a chain in two cases only:</p>
+<ul>
+<li>The blockchain itself is in a mega-hype moment, it's full of projects and people. Launching here is easy and as dev I get an immediate profit by doing so. Not the juno case.</li>
+<li>The blockchain itself is rich af and can bribe devs to build, usually with oversized fundings. Not juno case.</li>
+</ul>
+<p>We have been in both these statuses, but that times are officially gone.</p>
+<p>So what can we do? Build dAPPs by ourselves. Having a suite of basic dAPPs made by "Juno team" for Juno and owned by the community is crucial in the current phase of the network.</p>
+<p>We need to show the cool features offered by Juno, by demonstrating that stuff can be build and stuff can be successfull. It needs to start from us.</p>
+<p>How? Part of the dev operatives must be CW Devs. Some external help might be requested trough RFPs.</p>
+<h2>Am I still bullish?</h2>
+<p>Always. But it's getting frustrating to see such a huge potential wasted, and the more time it passes the more drastic measures has to be taken.</p>
+        </div>
+
+
+        <footer>
+            <div class="footer-links">
+                <a href="https://twitter.com/dimiandre" target="_blank">Twitter</a>
+                <a href="https://github.com/dimiandre" target="_blank">GitHub</a>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Dark mode -->
+    <script type="text/javascript" src="../scripts/theme-mode.js"></script>
+</body>
+</html>
