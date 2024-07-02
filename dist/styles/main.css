@@ -123,3 +123,7 @@ a {
 body.dark-mode a {
     color: #61adff; /* This color works well on dark backgrounds */
 }
+
+img {
+    max-width: 100%;
+}
