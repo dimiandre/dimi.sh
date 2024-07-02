@@ -47,7 +47,7 @@ What was really missing in the charter was someone giving direction to it, someo
 
 A structure that may be efficient is the following
 
-![Juno Structure](https://gateway.pinata.cloud/ipfs/Qmec2BjA1qScNoXnSxhCrEzAJnCuHn9mh6SkZtPyhcBjUS)
+![Juno Structure](https://dimi.sh/img/juno-structure.png)
 
 1. _Juno Leader_: This should be elected by the community. Anyone should be able to apply as a leader, and every mandate should be 6-12 months long. To apply a leader has to provide the following: Previous experience with juno, conflict of interest disclosure, a budget for its entire mandate, a well defined roadmap with tangible objectives and deadlines.
 2. _Treasury Custodians_: This is just a multisig to handle payments. Its members should not be part of the operatives or the leader. The custodians have the responsibility of keeping funds safe and ensuring the leader is following the scheduled budget.
