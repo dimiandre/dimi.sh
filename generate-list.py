@@ -3,27 +3,30 @@ import os
 import datetime
 import re
 
-# Create a subclass of HTMLParser and define a handle_starttag method
-# that gets the content of the first <p> tag
+from html.parser import HTMLParser
+
+from html.parser import HTMLParser
+
 class MyHTMLParser(HTMLParser):
     def __init__(self):
         super().__init__()
         self.recording = 0
         self.data = ''
+        self.first_paragraph_found = False
 
     def handle_starttag(self, tag, attrs):
-        if tag == 'p':
-            self.recording = 1
+        if tag == 'p' and not self.first_paragraph_found:
+            self.recording += 1
 
     def handle_endtag(self, tag):
         if tag == 'p' and self.recording:
             self.recording -= 1
+            self.first_paragraph_found = True
 
     def handle_data(self, data):
-        if self.recording:
+        if self.recording and not self.first_paragraph_found:
             self.data = data
-            self.recording -= 1
-            
+
 def get_date_from_filename(filename):
     # Remove the file extension and split the components
     parts = filename.replace(".html", "").split("-")
