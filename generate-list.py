@@ -91,3 +91,5 @@ if __name__ == "__main__":
 
     with open("dist/index.html", "w") as file:
         file.write(content)
+
+    print("Generation completed successfully.")

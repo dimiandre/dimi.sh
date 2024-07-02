@@ -1,50 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dimi Blog</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/main.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
 
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EFTSQRYD3X"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-EFTSQRYD3X"
+    ></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    gtag('config', 'G-EFTSQRYD3X');
+      gtag("config", "G-EFTSQRYD3X");
     </script>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="top-bar">
-            <div class="back-button">
-            </div>
-            <button id="theme-toggle">☀/☾</button>
+      <div class="top-bar">
+        <div class="back-button"></div>
+        <button id="theme-toggle">☀/☾</button>
+      </div>
+
+      <h1>🦙 dimi's notes</h1>
+      <p class="description">
+        Hi everyone 👋 I'll post here my notes & toughts about the projects i'm
+        working on.
+      </p>
+
+      <!--BLOG_LIST_START-->
+      <div class="post">
+        <span class="date">June 23, 2023</span>
+        <h2>
+          <a href="/blog/2023-06-23-why-juno.html" class="post-link"
+            >Why I'm still bullish on Juno</a
+          >
+        </h2>
+        <p>Juno's challenges and strengths, what should we do now?</p>
+      </div>
+      <!--BLOG_LIST_END-->
+
+      <footer>
+        <div class="footer-links">
+          <a href="https://twitter.com/dimiandre" target="_blank">Twitter</a>
+          <a href="https://github.com/dimiandre" target="_blank">GitHub</a>
         </div>
-
-        <h1>🦙 dimi's notes</h1>
-        <p class="description">Here you will find some thoughts and notes about the projects I'm working on.</p>
-        
-        <!--BLOG_LIST_START-->
-        <div class="post">
-            <span class="date">June 23, 2023</span>
-            <h2><a href="/blog/2023-06-23-why-juno.html" class="post-link">Why I'm still bullish on Juno</a></h2>
-            <p>Juno's challenges and strengths, what should we do now?</p>
-        </div>
-        <!--BLOG_LIST_END-->
-
-        <footer>
-            <div class="footer-links">
-                <a href="https://twitter.com/dimiandre" target="_blank">Twitter</a>
-                <a href="https://github.com/dimiandre" target="_blank">GitHub</a>
-            </div>
-        </footer>
-
+      </footer>
     </div>
     <!-- Dark mode -->
     <script type="text/javascript" src="./scripts/theme-mode.js"></script>
-</body>
+  </body>
 </html>
