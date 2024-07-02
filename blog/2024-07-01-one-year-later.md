@@ -1,6 +1,6 @@
 # One Year Later on Juno
 
-Hello! I'm Dimi 🦙. For those who don't know me, I helped found Juno, contributing to its launch phase with my protocols and engineering abilities. This note is a sequel to [my previous one](https://google.com), released now more than one year ago.
+Hello! I'm Dimi 🦙. For those who don't know me, I helped found Juno, contributing to its launch phase with my protocols and engineering abilities. This note is a sequel to [my previous one](https://dimi.sh/blog/2023-06-23-why-juno.html), released now more than one year ago.
 
 ## What happened
 
